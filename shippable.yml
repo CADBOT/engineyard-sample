@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 2.2.0
+
+env:
+  global:
+    - secure: OjtkYvfB48/JNEHy/JHdqgorqxKu2tC5fnZFfX9mBBVYpON60GN54Mu3NqESCq8xE7lHpoVwSuTw4Jw2fDCq+0MBnhwFfZU4S1WRbQZJoNe8P96hb0on/LY6eijOqM6r0gRV9bxUTu690LliHdJ5Wc+5YC0qVEdW7ftSLWrFjH7HwbYrB6X/Hu/2OMG/nceLkvY2j6b2QndLhC78GQKeYRM03pROf3N9tCNluwhKwKtzoB0OM2pmVMNaxrAExQ5Zggxpi81UEvAk2as5s4xZmpWyCZ1J0H+bmkQeeyfwm6UG5mH2tRP7LS/CzKgE5lK/parVBZAknDPk0HM21UWDxg==    
+
+before_install:
+  - gem install engineyard
+
+after_success:
+  - ey deploy --api-token=$api-token
