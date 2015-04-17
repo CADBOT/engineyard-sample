@@ -12,4 +12,6 @@ before_install:
   - ssh-add ~/.ssh/id_rsa
 
 after_success:
+  - eval `ssh-agent -s`
+  - ssh-add
   - ey deploy --api-token=$token
