@@ -9,6 +9,7 @@ env:
 
 before_install:
   - gem install engineyard
+  - ssh-add ~/.ssh/id_rsa
 
 after_success:
   - ey deploy --api-token=$token
