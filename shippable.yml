@@ -9,7 +9,6 @@ env:
 
 before_install:
   - gem install engineyard
-  - ssh-add ~/.ssh/id_rsa
 
 after_success:
   - eval `ssh-agent -s`
