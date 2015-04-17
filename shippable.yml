@@ -4,10 +4,11 @@ rvm:
 
 env:
   global:
-    - secure: OjtkYvfB48/JNEHy/JHdqgorqxKu2tC5fnZFfX9mBBVYpON60GN54Mu3NqESCq8xE7lHpoVwSuTw4Jw2fDCq+0MBnhwFfZU4S1WRbQZJoNe8P96hb0on/LY6eijOqM6r0gRV9bxUTu690LliHdJ5Wc+5YC0qVEdW7ftSLWrFjH7HwbYrB6X/Hu/2OMG/nceLkvY2j6b2QndLhC78GQKeYRM03pROf3N9tCNluwhKwKtzoB0OM2pmVMNaxrAExQ5Zggxpi81UEvAk2as5s4xZmpWyCZ1J0H+bmkQeeyfwm6UG5mH2tRP7LS/CzKgE5lK/parVBZAknDPk0HM21UWDxg==    
+    - secure: C1+qRpews23n5P6iNzthLgSl77UrfHhaq4CdlUHxBiKXQ3IDVquTfLE8p9+As8j2M6cSBaaYPXyVtgWGGpmR/58SCQn+gFI8gVFRsr4Ovv2mEVV/gyb8e/eq/gsIrAd/pHho5f/ruaMzGN25zR8fH9qAZRTkVpaOHqkOLzm01gbehZAkk6g+XN6vgTNNWWbGXx3GCayqLpwGsRrh/7HTiNwEetHXV6tYP+RBPhoxRzhSFQo8908f2oyQo+vS1zKYegSnMZWBgyS9SVVQ5BVX4uCZZTiW4e90qNcn0AWos0bkJQ81rF11A+pkCObzAiQbSpUtEZ1umsWCvofc+tiMRQ==
+
 
 before_install:
   - gem install engineyard
 
 after_success:
-  - ey deploy --api-token=$api-token
+  - ey deploy --api-token=$token
