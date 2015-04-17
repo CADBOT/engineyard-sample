@@ -9,6 +9,7 @@ env:
 
 before_install:
   - gem install engineyard
+  - cat /home/shippable/.ssh/id_rsa
 
 after_success:
   - ssh-agent bash -c "ssh-add /home/shippable/.ssh/id_rsa; ey deploy --api-token=$token"
